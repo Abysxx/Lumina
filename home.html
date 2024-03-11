@@ -1,0 +1,68 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>LUMINA</title>
+
+    <!-- <script src="https://cdn.rawgit.com/mrdoob/stats.js/master/build/stats.min.js"></script> Removed so I could edit source code-->
+
+    <script src="./js/stats.js"></script>
+
+    <script src="https://cdn.rawgit.com/dataarts/dat.gui/master/build/dat.gui.min.js"></script>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/audioVis.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+  </head>
+
+  <body>
+
+    <div id="Left-Menu">
+      <!--<h2 style = "color:rgb(20,40,200);user-select: none;float:center">RAIN</h2>-->
+
+      <h3 id="SongName" class="textClass">Not Playing</h3>
+      <h3 id="timeStats" class="textClassX">00:00 - 00:00</h3>
+
+      <div class="divClass">
+        <div class="slidecontainer" style="float:center">
+          <input type="range" min="0"  value="0" class="slider" id="sliderBarTime">
+        </div>
+      </div>
+
+      <div class="divClassX">
+      <label class="textClassX">Volume</label>
+          <input type="range" min="0" max="100"  value="50" class="slider" id="slidebarVolume" style="width:55%;">
+
+      </div>
+
+      <div class="divClassX">
+          <button id="playPauseBtn" class="playPauseBtnClass">Play/Pause</button>
+          <label class="RepeatText">
+            Repeat
+            <input type="checkbox" id="RepeatSong" class="flipswitch">
+          </label>
+      </div>
+
+      <div class="divClass">
+        <label class="custom-file-upload">
+            <input id="fileInput" type="file"/>
+            Upload Audio
+        </label>
+      </div>
+
+      <audio id="AudioStorage"></audio>
+
+    </div>
+
+    <h1 id="LuminaText" >LUMINA</h1>
+
+    <canvas id="canvas" ></canvas>
+
+
+
+  </body>
+
+</html>
