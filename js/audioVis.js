@@ -130,6 +130,7 @@ function createFile() {
         }
 
         audio.src = url;
+        audioCtx.resume()
         audio.play();
 
 
